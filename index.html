@@ -30,6 +30,14 @@
 	</head>
 <body>
 <div class="wrapper">
+<!--fixed-sidebar-->
+<div class="fixed_sidebar">
+	<a href="#"><span><img src="img/home_icon_big.png" alt=""></span></a>
+	<a href="#"><span><img src="img/letter_icon_big.png" alt=""></span></a>
+	<a href="#"><span><img src="img/calc_icon_big.png" alt=""></span></a>
+</div>
+<!--end-fixed-sidebar-->
+
 <!--header-->
 <header class="header">
 	<div class="container">
@@ -37,7 +45,16 @@
 		<nav class="menu">
 			<ul>
 				<li class="active"><a href="#" ><img src="img/icons/home.png" alt=""></a></li>
-				<li><a href="#">Qui sommes-nous ?</a></li>
+				<li><a href="#">Qui sommes-nous ?</a>
+					<div class="drop_menu">
+						<ul class="container">
+							<li><a href="#">Nos expertises</a></li>
+							<li><a href="#">Le service Groupe Chateaudun</a></li>
+							<li><a href="#">Factor Price Simulation</a></li>
+							<li><a href="#">International</a></li>
+						</ul>
+					</div>
+				</li>
 				<li><a href="#">L’affacturage et ses dérivés </a></li>
 				<li><a href="#">L’Assurance-crédit</a></li>
 				<li><a href="#">Pourquoi utiliser Chateaudun-crédit ?</a></li>
@@ -92,19 +109,13 @@
 <!--end-main-->
 <!--footer-->
 <footer class="footer">
+	<!--topfooter-->
 	<div class="top_footer_wrapper">
 		<div class="container">
 			<div class="foot_contacts">
 				<div class="foot_title">Nous contacter</div>
 				<p>77 rue la Boétie - 75008 Paris <br>01.48.78.47.77</p>
 				<a href="#" class="button">Factor contact<img src="img/icons/letter_icon.png" alt=""></a>
-			</div>
-			<div class="foot_social">
-				<div class="foot_title">Nous suivre</div>
-				<nav>
-					<a href="#"><img src="img/linkedin.png" alt=""></a>
-					<a href="#"><img src="img/dribble.png" alt=""></a>
-				</nav>
 			</div>
 			<div class="foot_news">
 				<div class="foot_title">Newsletter</div>
@@ -115,8 +126,18 @@
 					<button>S’inscrire</button>
 				</form>
 			</div>
+			<div class="foot_social">
+				<div class="foot_title">Nous suivre</div>
+				<nav>
+					<a href="#"><img src="img/linkedin.png" alt=""></a>
+					<a href="#"><img src="img/dribble.png" alt=""></a>
+				</nav>
+			</div>
 		</div>
 	</div>
+	<!--end-topfooter-->
+
+	<!--menu-footer-->
 	<nav class="foot_menu">
 		<div class="container">
 			<ul>
@@ -131,6 +152,7 @@
 			</ul>
 		</div>	
 	</nav>
+	<!--end-menu-footer-->
 </footer>
 <!--end-footer-->
 </div>

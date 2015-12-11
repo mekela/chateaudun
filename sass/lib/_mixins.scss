@@ -6,16 +6,16 @@ overflow: hidden;
 //buttons and inputs
 
 @mixin button($button){
-  @include button_gradient('');
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
+  background:#f06b18;
   font-family: $ffamily;
+  text-transform: uppercase;
   color: #ffffff;
-  font-size: 20px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
 }
 @mixin button_gradient($button_gradient){
   background: #3498db;
@@ -35,15 +35,15 @@ overflow: hidden;
 }
 
 @mixin input($input){
-  width: 300px;
-  height: 25px;
+  width: 165px;
+  height: 20px;
+  background-color: #ef6b17;
   box-sizing: border-box;
   padding: 0 5px;
-  color: #000;
-  font-size: 14px;
   font-family: $ffamily;
-  border: 1px solid #000;
-  border-radius: 3px;
+  color: #f2f2f2;
+  font-size: 14px;
+  font-style: italic;
 }
 @mixin input_focus($input_focus){
   box-shadow: 0 0 2px #99e6f9;
