@@ -13,7 +13,10 @@ $(document).ready(function() {
 	  $( ".menu > ul" ).slideToggle( "slow");
 	});
 
-	$( ".main, .footer" ).click(function() {
-	  $( ".menu > ul" ).hide();
-	});
+		$( ".touch .main, .touch .footer" ).click(function() {
+		  $( ".touch .menu > ul" ).hide();
+		});
 });
+
+
+
