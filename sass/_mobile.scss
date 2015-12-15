@@ -2,16 +2,218 @@
 // You can read about usage in https://github.com/paranoida/sass-mediaqueries 
 
 //styles for custom device width
-@include mq($max-width: 1000px) {
-  
+@include mq($max-width: 1100px) {
+.wrapper{
+	padding: 0;
+}	
+  	.container{
+	width:auto;
+	}
+		
+			.header{
+				position: static;
+			}
+	.menu{
+		float: none;
+	}
+	.our_jobs_block{
+		width: 48%;
+	}
+	.map_wrap{
+		img{
+			max-width: 100%;
+		}
+	}
 }
 
 //styles for ipad
 @include ipad {
-	
+	.logo{
+		float: none;
+		display: block;
+		text-align: center;
+	}
+	.header{
+		height: auto;
+	}
+		.menu{
+			width: 100%;
+			text-align: center;
+		}	
+			.menu li a{
+				font-size: 13px;
+			}
+		.drop_menu{
+			top: 137px;
+		}
+	.foot_social{
+		padding: 0 0 0 39px;
+	}
+	.foot_contacts{
+		width: 260px;
+		padding: 0 0 0 10px;
+	}
+	.contexts_item{
+		margin: 0 auto;
+	}
+	.associates_item:nth-child(2){
+		margin: 0 5px;
+	}
+	.colaborators_inner .associates_item{
+		padding: 0 9px;
+	}
+	.foot_social{
+		text-align: center;
+	}
+	.mission_wrap section{
+		width: 72%;
+	}
+}
+
+//styles for mobile phones
+@include mq($max-width: 767px) {
+	.logo{
+		float: none;
+		display: block;
+		text-align: center;
+	}
+	.header{
+		height: auto;
+	}
+		.menu{
+			width: 100%;
+			text-align: center;
+			padding-left: 0;
+			li{
+				padding: 0;
+				display: block;
+				a{
+					height: 45px;
+					line-height: 45px;
+					border-top: 1px solid #fff;
+					img{
+						position: relative;
+						top: 4px;
+					}
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+			}
+		}	
+		.menu > ul{
+			display: none;
+		}
+		.drop_menu{
+			height: auto;
+			position: static;
+		}
+	.foot_social{
+		padding: 0 0 0 39px;
+	}
+	.foot_contacts{
+		width: 260px;
+		padding: 0 0 0 10px;
+	}
+	.trigger_menu{
+		display: block;
+		color: #132b51;
+		font-family: $ffamily;
+		font-size: 20px;
+		text-transform: uppercase;
+		font-weight: bold;
+		margin: 10px 0;
+		span{
+			position: relative;
+			bottom: 8px;
+			padding-left: 5px;
+		}
+		img{
+			height: 30px;
+		}
+	}
+	.our_jobs_block{
+		float: none;
+		width: 100%;
+		padding: 0;
+	}
+		.top_footer_wrapper{
+			height: auto;
+			text-align: center;
+		}
+			.foot_contacts, .foot_news, .foot_social{
+				width: 100%;
+				float: none;
+				border: none;
+				margin: 0;
+				padding: 0 0 20px 0;
+			}
+				.foot_title, .top_footer_wrapper p{
+					text-align: center;
+				}
+	.foot_menu, .top_footer_wrapper:before{
+		display: none;
+	}
+
+	.main_title, .title{
+		font-size: 30px;
+	}
+	.top_image_text{
+		width: 100%;
+		left: 0;
+		margin-left: 0;
+	}
+	.top_image_text{
+		display: none;
+	}
+	.contexts_item{
+		width: 100%;
+	}
+
+	.tags_wrap figure{
+		width: 95%;
+		margin: 0 auto;
+		padding-bottom: 40px;
+		display: block;
+		span{
+			display: block;
+			width: 100%;
+			span{
+				display: block;
+				width: 100%;
+			}
+		}
+		&:before{
+			display: none;
+		}
+	}
+	.associates_item, .colaborators_inner .associates_item{
+		display: block;
+		float: none;
+		margin: auto;
+		padding-bottom: 40px;
+	}
+		.associates_item:nth-child(2){
+			margin: auto;
+		}
+	.mission_wrap section{
+		width: 92%;
+	}
+
+}
+
+//styles for small tablets
+@include mq($media-type: 'all', $min-width: 600px, $max-width: 767px) {
+	.associates_item, .colaborators_inner .associates_item{
+		display: inline-block;
+	}
 }
 
 //styles for iphone
 @include iphone5 {
-
+	.targets_item{
+		width: 95%;
+		display: block;
+		margin: 20px auto;
+	}
 } 

@@ -153,15 +153,66 @@
 				padding: 0 67px;
 				text-transform: uppercase;
 				font-size: 15px;
-				color: #132b52;
+				color: $second_color;
 				padding-bottom: 15px;
 			}
 			em{
 				display: block;
 				font-size: 14px;
-				color: #132b52;
+				color: $second_color;
 				font-style: italic;
 				padding: 13px 0 0 0;
+			}
+			section{
+				font-size: 12px;
+				color: $second_color;
+				text-align: center;
+				line-height: 15px;
+				padding: 0 65px;
+				margin-top: 16px;
+			}
+			article{
+				font-size: 18px;
+				font-style: italic;
+				padding-top: 70px;
+			}
+			h2{
+				font-size: 36px;
+				font-style: italic;
+			}
+		}
+		.top_image_sample{
+			top: 23px;
+		}
+		.top_image_quote{
+			height: 220px;
+			color: #231f1f;
+			font-family: $ffamily;
+			font-size: 36px;
+			font-style: italic;
+			line-height: 1;
+			blockquote{
+				padding: 75px 0 0 0;
+			}
+			&:before{
+				content: '“';
+				position: absolute;
+				color: #231f1f;
+				font-family: $ffamily;
+				font-size: 150px;
+				font-style: italic;
+				left: 49px;
+   				top: 77px;
+			}
+			&:after{
+				content: '”';
+				position: absolute;
+				color: #231f1f;
+				font-family: $ffamily;
+				font-size: 150px;
+				font-style: italic;
+				right: 59px;
+   				top: 77px;
 			}
 		}
 
@@ -236,7 +287,7 @@
 				left: 0;
 				width: 100%;
 				height: 1px;
-				background:#132b52;
+				background:$second_color;
 			}
 			strong{
 				font-weight: normal;
@@ -259,7 +310,7 @@
 			}
 			h5{
 				font-weight: bold;
-				color: #132b52;
+				color: $second_color;
 				text-transform: uppercase;
 				padding-bottom: 18px;
 				font-size:18px;
@@ -423,6 +474,7 @@
 		font-size: 50px;
 		text-transform: uppercase;
 		text-align: center;
+		line-height: 1.3;
 		strong{
 			display: block;
 			padding: 0px 0 10px 0;
@@ -531,3 +583,120 @@
 	}
 /*----end-colaborators-----*/
 
+
+/*-----------------------affacturage.html--------------------------*/
+
+/*------------mission-----------*/
+.mission_wrap{
+	line-height: 30px;
+	margin-bottom: 40px;
+	li{
+		display: block;
+		padding-left: 42px;
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 10px;
+			width: 9px;
+			height: 9px;
+			border-radius: 50%;
+			background-color: #ef6b17;
+		}
+	}
+	section{
+		width: 52%;
+		margin: auto;
+	}
+	small{
+		display: block;
+		text-align: center;
+		font-size: 16px;
+		margin: -15px 0 53px 0;
+	}
+	article{
+		text-align: center;
+		dl{
+			padding-bottom: 46px;
+			display: inline-block;
+			width: 200px;
+			margin: 0 40px;
+			vertical-align: top;
+			dt{
+				font-size: 36px;
+				color: $third_color;
+				text-transform: uppercase;
+				font-weight: 500;
+			}
+			dd{
+				padding: 12px 0;
+				font-size: 16px;
+				color: $main_color;
+				font-weight: 500;
+			}
+		}
+	}
+}
+/*----------end--mission-----------*/
+
+/*------------targets-----------*/
+.targets_wrap{
+	@include povh('');
+	padding: 38px 0;
+	font-size: 0;
+}
+	.targets_item{
+		width: 50%;
+		display: inline-block;
+		color: #231f1f;
+		line-height: 1.4;
+		text-transform: uppercase;
+		font-size: 16px;
+		font-weight: 500;
+		text-align: center;
+		vertical-align: top;
+		margin-bottom: 65px;
+		figcaption{
+			color: #132b51;
+			font-family: $fontfamily;
+			font-size: 50px;
+			padding: 0 0 23px 0;
+		}
+	}
+/*-----------end-targets-----------*/
+
+/*------------------------pourquoi.html---------------------*/
+
+/*-----------contexts-----------*/
+.contexts_wrap{
+	@include povh('');
+	padding: 28px 0;
+}
+	.contexts_inner{
+		text-align: center;
+		 display: flex;
+		 flex-wrap: wrap;
+		 justify-content: space-between;
+		 align-content: space-between;
+	}
+		.contexts_item{
+			width: 417px;
+			padding-bottom: 43px;
+			span{
+				display: block;
+				height: 100px;
+				vertical-align: bottom;
+			}
+			figcaption{
+				font-size: 24px;
+				text-transform: uppercase;
+				font-weight: 500;
+				padding-bottom: 29px;
+			}
+			p{
+				font-size: 16px;
+			}
+		}
+
+/*-----------end-contexts-----------*/

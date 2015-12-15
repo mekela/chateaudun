@@ -8,14 +8,12 @@ $(document).ready(function() {
 		}
 	});
 	
-	//placeholder
-	$.support.placeholder = ('placeholder' in document.createElement('input'));
+	//menu
+	$( ".trigger_menu" ).click(function() {
+	  $( ".menu > ul" ).slideToggle( "slow");
+	});
 
-	//bxslider
-	$('.bxslider').bxSlider({
-	  nextSelector: '#slider-next',
-	  prevSelector: '#slider-prev',
-	  nextText: 'Onward →',
-	  prevText: '← Go back'
+	$( ".main, .footer" ).click(function() {
+	  $( ".menu > ul" ).hide();
 	});
 });
