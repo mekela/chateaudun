@@ -11,6 +11,7 @@
 		<!--End Favicon-->
 		<!-- CSS -->
 			<link href='https://fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,700,700italic,600italic' rel='stylesheet' type='text/css'>
+			<link rel="stylesheet" href="css/animate.min.css" media="screen" >
 			<link rel="stylesheet" href="css/jquery.fancybox.css" media="screen" >
 			<link rel="stylesheet" href="css/jquery.bxslider.css" media="screen" >
 			<link href="css/screen.css" rel="stylesheet" media="screen">
@@ -18,7 +19,7 @@
 		<!-- END OF CSS -->
 		<!--SCRIPT -->
 			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-			<script src="js/jquery.placeholder.js"></script>
+			<script src="js/wow.min.js"></script>
 			<script src="js/jquery.fancybox.pack.js"></script>
 			<script src="js/modernizr.custom.js"></script>
 			<script src="js/jquery.bxslider.min.js"></script>
@@ -32,9 +33,9 @@
 <div class="wrapper">
 <!--fixed-sidebar-->
 <div class="fixed_sidebar">
-	<a href="#"><span><img src="img/home_icon_big.png" alt=""></span></a>
-	<a href="#"><span><img src="img/letter_icon_big.png" alt=""></span></a>
-	<a href="#"><span><img src="img/calc_icon_big.png" alt=""></span></a>
+	<a href="#"><b>Home</b><span><img src="img/home_icon_big.png" alt=""> </span></a>
+	<a href="#"><b>Letter</b><span><img src="img/letter_icon_big.png" alt=""></span></a>
+	<a href="#calc_modal" class="fancybox"><b>Form</b><span><img src="img/calc_icon_big.png" alt=""></span></a>
 </div>
 <!--end-fixed-sidebar-->
 
@@ -44,11 +45,11 @@
 		<div  class="logo">
 			<a href="/"><img src="img/logo.png" alt=""></a>
 			<div class="lang">
-				<select>
-					<option>Language</option>
-					<option>En</option>
-					<option>Fr</option>
-				</select>
+				<strong><img src="img/en-flag.png" alt=""> En</strong>
+				<ul>
+					<li><a href="#"><img src="img/en-flag.png" alt=""> En</a></li>
+					<li><a href="#"><img src="img/fr-flag.png" alt=""> Fr</a></li>
+				</ul>
 			</div>	
 		</div>
 		<nav class="menu">
@@ -104,23 +105,23 @@
 			</div>
 			<small>Délai moyen de réalisation de nos projets d’affacturage par segment :</small>
 			<article>
-				<dl>
+				<dl class="wow fadeInUp">
 					<dt>37 jours</dt>
 					<dd>sur le segment des Grands comptes et Pan-européens,</dd>
 				</dl>
-				<dl>
+				<dl class="wow fadeInUp">
 					<dt>23 jours</dt>
 					<dd>sur le segment des PME de moins de 50 M€ de CA,</dd>
 				</dl>
-				<dl>
+				<dl class="wow fadeInUp">
 					<dt>12 jours</dt>
 					<dd>sur le segment des TPE de moins d’1M€ de CA.</dd>
 				</dl>
-				<dl>
+				<dl class="wow fadeInUp">
 					<dd>Une ligne pan-européenne de 120 M€ en</dd>
 					<dt>30 jours</dt>
 				</dl>
-				<dl>
+				<dl class="wow fadeInUp">
 					<dd>Une ligne syndiquée de 350 M€ accordée en</dd>
 					<dt>4 semaines</dt>
 				</dl>
@@ -146,7 +147,7 @@
 		<div class="container">
 			<div class="title main_title">Les contextes</div>
 			<div class="contexts_inner">
-				<div class="contexts_item">
+				<div class="contexts_item wow fadeInUp" >
 					<figure>
 						<span><img src="img/contexts_icon1.png" alt=""></span>
 						<figcaption>Développement :</figcaption>
@@ -155,7 +156,7 @@
 						L’assurance-crédit et l’affacturage sont deux outils au service de l’activité de l’entreprise. L’assurance-crédit sécurise l’entreprise contre la défaillance de ses clients et l’affacturage permet le financement du développement de l’activité. Groupe Chateaudun aide l’entreprise à répondre aux besoins d’aujourd’hui et  anticipé les besoins de garanties et de financement de demain.
 					</p>
 				</div>
-				<div class="contexts_item">
+				<div class="contexts_item wow fadeInUp">
 					<figure>
 						<span><img src="img/contexts_icon2.png" alt=""></span>
 						<figcaption>Private Equity :</figcaption>
@@ -163,7 +164,7 @@
 					<p>
 						Le factoring est fréquemment une composante du financement d’acquisition. Depuis 2005 Chateaudun-Crédit accompagne plus de 30 Fonds de Private Equity dans l’évaluation et le choix de leur solution d’affacturage. Les résultats recherchés : la disponibilité du financement dès le jour du closing, des contrats en phase avec les exigences de la dette d’acquisition notamment en termes de durée. 	</p>
 				</div>
-				<div class="contexts_item">
+				<div class="contexts_item wow fadeInUp">
 					<figure>
 						<span><img src="img/contexts_icon3.png" alt=""></span>
 						<figcaption>Retournement  :</figcaption>
@@ -172,7 +173,7 @@
 						En situation de difficulté et pour permettre le retournement d’une entreprise, l’affacturage est un outil indispensable.  Alors que la communication avec les partenaires financiers est tendue, Chateaudun Crédit aide l’entreprise à s’appuyer sur une source de financement durable.
 					</p>
 				</div>
-				<div class="contexts_item">
+				<div class="contexts_item wow fadeInUp">
 					<figure>
 						<span><img src="img/contexts_icon4.png" alt=""></span>
 						<figcaption>Création</figcaption>
@@ -181,7 +182,7 @@
 						Protéger l’investissement du créateur d’entreprise grâce à l’assurance-crédit et permettre le financement de ses toutes premières ventes : chaque année Chateaudun Crédit accompagne une 50aine de créateurs d’entreprise.
 					</p>
 				</div>
-				<div class="contexts_item">
+				<div class="contexts_item wow fadeInUp">
 					<figure>
 						<span><img src="img/contexts_icon5.png" alt=""></span>
 						<figcaption>La méthode</figcaption>
@@ -194,7 +195,7 @@
 						Chaque étape est accompagnée d’un livrable facilitant les décisions de l’équipe dirigeante.
 					</p>
 				</div>
-				<div class="contexts_item">
+				<div class="contexts_item wow fadeInUp">
 					<figure>
 						<span><img src="img/contexts_icon6.png" alt=""></span>
 						<figcaption>L’accompagnement Chateaudun</figcaption>
@@ -260,5 +261,190 @@
 </footer>
 <!--end-footer-->
 </div>
+
+<!--modal-->
+<div class="modal" id="calc_modal">
+	<div class="modal_form">
+	<form id="formulaire" method="post" action="" novalidate="novalidate">
+		<div class="questionnaire">
+			<h4>Votre entreprise</h4>
+					<div class="champs">
+					<label for="raison_sociale">Raison sociale<span class="efface">*</span></label>
+					<input id="raison_sociale" type="text" name="raison_sociale" value="">
+					<span class="tooltip_rescue" title=""></span>
+				</div>
+				<div class="champs">
+					<label for="siren">Numéro Siren<span class="efface">*</span></label>
+					<input id="siren" type="text" name="siren" value="">
+					<span class="tooltip_rescue"></span>
+				</div>
+				<div class="champs">
+					<label for="activite">Secteur d'activité<span class="efface">*</span></label>
+					<select id="activite" name="activite">
+						<option value="" selected="">Choisissez</option>
+						<option value="Fabricant, negociant">Fabricant, négociant</option>
+						<option value="Service aux entreprises">Service aux entreprises</option>
+						<option value="Batiments">Bâtiments</option>
+						<option value="Travaux publics">Travaux publics</option>
+						<option value="Autres">Autres</option>
+					</select>
+					<span class="tooltip_rescue"></span>
+				</div>
+				<div class="champs">
+					<label>Société en création?<span class="efface">*</span></label>
+					<span class="radio">
+						<input type="radio" name="creation" value="1">oui
+					</span>
+					<span class="radio">
+						<input type="radio" name="creation" value="2" checked="">non
+					</span>
+					<span class="tooltip_rescue"></span>
+				</div>
+				<div class="champs">
+					<label>Société de travaux?<span class="efface">*</span></label>
+					<span class="radio">
+						<input type="radio" name="travaux" value="1">oui
+					</span>
+					<span class="radio">
+						<input type="radio" name="travaux" value="2" checked="">non
+					</span>
+					<span class="tooltip_rescue"></span>
+				</div>
+				<div class="champs">
+					<label for="ca">Chiffre d'affaires<span class="efface">*</span></label>
+					<input id="ca" class="reduit" type="text" name="ca" value="">
+					<span class="margin">€ /an</span>
+					<span class="tooltip_rescue"></span>
+				</div>
+				<div class="champs">
+					<label>Chiffre d'affaires export?<span class="efface">*</span></label>
+					<span>
+						<input id="export_oui" type="radio" name="caexport" value="1">oui
+					</span>
+					<span>
+						<input id="export_non" type="radio" name="caexport" value="" checked="">non
+					</span>
+					<span class="tooltip_rescue"></span>
+				</div>
+				<div class="champs export_hide">
+					<label for="caexport_pour">% de CA à l'export?<span class="efface">*</span></label>
+					<input id="caexport_pour" type="text" name="caexport_pour" value="">
+					<span class="tooltip_rescue efface"></span>
+				</div>
+				<div class="champs">
+					<label for="nb_factures">Nb de clients facturés<span class="efface">*</span></label>
+					<input id="nb_factures" type="text" name="nb_factures" value="">
+					<span class="margin">/mois</span>
+					<span class="tooltip_rescue"></span>
+				</div>
+				<div class="champs">
+					<label for="nb_emises">Nb de factures émises<span class="efface">*</span></label>
+					<input id="nb_emises" type="text" name="nb_emises" value="">
+					<span class="margin">/mois</span>
+					<span class="tooltip_rescue"></span>
+				</div>
+				<div class="champs">
+					<label for="nb_avoirs">Nb d'avoirs<span class="efface">*</span></label>
+					<input id="nb_avoirs" type="text" name="nb_avoirs" value="">
+					<span class="margin">/mois</span>
+					<span class="tooltip_rescue"></span>
+				</div>
+				<div class="champs">
+					<label for="delai_paye">Délai moyen de paiement<span class="efface">*</span></label>
+					<!-- <input id="delai_paye" type="text" name="delai_paye" value=""/> -->
+					<select id="delai_paye" name="delai_paye">
+						<option value="" selected="">Choisissez</option>
+						<option value="30">30 jours</option>
+						<option value="45">45 jours</option>
+						<option value="60">60 jours</option>
+						<option value="90">90 jours</option>
+						<option value="100">&gt; 90 jours</option>
+					</select>
+					<span class="tooltip_rescue"></span>
+				</div>
+				<div class="champs">
+					<label for="type_contrat">Type de contrat ?<span class="efface">*</span></label>
+					<select id="type_contrat" name="type_contrat">
+						<option value="1" selected="">Indifférent</option>
+						<option value="1">Full Factoring</option>
+						<option value="2">Non géré</option>
+
+					</select>
+					<span class="tooltip_rescue"></span>
+				</div>
+				</div>
+		<!-- infos perso -->
+		<div class="questionnaire">
+			<h4>Vos coordonnées</h4>
+				<div class="champs">
+					<label for="fonction">Fonction</label>
+					<select id="fonction" name="fonction">
+						<option value="" selected="">Choisissez</option>
+						<option value="dirigeant">Dirigeant</option>
+						<option value="directeur financier">Directeur Financier</option>
+						<option value="cadre">Cadre</option>
+						<option value="autre">Autre</option>
+					</select>
+					<span class="tooltip_rescue"></span>
+				</div>
+				<div class="champs">
+					<label>Civilité<span class="efface">*</span></label>
+					<span class="radio">
+						<input type="radio" name="civil" value="M" checked="">M
+					</span>
+					<span class="radio">
+						<input type="radio" name="civil" value="Mme">Mme
+					</span>
+					<span class="radio">
+						<input type="radio" name="civil" value="Mlle">Mlle
+					</span>
+					<span class="tooltip_rescue"></span>
+				</div>
+				<div class="champs">
+					<label for="Nom">Nom<span class="efface">*</span></label>
+					<input id="Nom" type="text" name="nom" value="">
+					<span class="tooltip_rescue"></span>
+				</div>
+				<div class="champs">
+					<label for="prenom">Prénom</label>
+					<input id="prenom" type="text" name="prenom" value="">
+					<span class="tooltip_rescue"></span>
+				</div>
+				<div class="champs">
+					<label for="telephone">Téléphone<span class="efface">*</span></label>
+					<input id="telephone" type="text" name="telephone" value="">
+					<span class="tooltip_rescue"></span>
+				</div>
+				<div class="champs">
+					<label for="email">Email<span class="efface">*</span></label>
+					<input id="email" type="email" name="email" value="">
+					<span class="tooltip_rescue"></span>
+				</div>
+				<div class="champs">
+					<label for="cp">Code postal<span class="efface">*</span></label>
+					<input id="cp" type="text" name="cp" value="">
+					<span class="tooltip_rescue"></span>
+				</div>
+				<div class="champs">
+					<label for="ville">Ville</label>
+					<input id="ville" type="text" name="ville" value="">
+					<span class="tooltip_rescue"></span>
+				</div>
+				</div>
+		<div class="questionnaire">
+			<div id="messages">
+				<p><span class="efface">*</span>champs obligatoires</p>
+				<!--Messages d'erreur-->
+				<div id="erreurs_messages"></div>
+				<div id="hidden_errors"></div>
+
+			</div>
+			<input id="siren_valid" type="hidden" name="siren_valid" value="">
+			<input id="valider" class='button' type="submit" name="valider" value="simuler">
+		</div>
+	</form>
+	</div>
+</div>
+<!--end-modal-->
 </body>
 </html>

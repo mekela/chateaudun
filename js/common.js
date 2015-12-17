@@ -16,6 +16,14 @@ $(document).ready(function() {
 		$( ".touch .main, .touch .footer" ).click(function() {
 		  $( ".touch .menu > ul" ).hide();
 		});
+
+	//wow
+	new WOW().init();
+
+	//lang
+	$( ".lang strong" ).click(function() {
+	  $( ".lang > ul" ).slideToggle( "slow");
+	});
 });
 
 
