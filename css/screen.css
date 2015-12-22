@@ -1115,6 +1115,10 @@ textarea {
 }
 
 /*------------end-modal-------------*/
+.lang ul {
+  z-index: 10;
+}
+
 @media only screen and (max-width: 1100px) {
   .wrapper {
     padding: 0;
@@ -1191,6 +1195,10 @@ textarea {
 
   .mission_wrap section {
     width: 72%;
+  }
+
+  .lang {
+    right: 0;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -1339,6 +1347,17 @@ textarea {
   .mission_wrap section {
     width: 92%;
   }
+
+  .qoute_text:before {
+    left: 1%;
+  }
+  .qoute_text:after {
+    right: 1%;
+  }
+
+  .targets_item figcaption {
+    font-size: 30px;
+  }
 }
 @media all and (min-width: 600px) and (max-width: 767px) {
   .associates_item, .colaborators_inner .associates_item {
@@ -1350,5 +1369,18 @@ textarea {
     width: 95%;
     display: block;
     margin: 20px auto;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .modal_form {
+    padding: 10px;
+  }
+  .modal_form input[type=text], .modal_form input[type=email], .modal_form select {
+    width: 95%;
+    box-sizing: border-box;
+  }
+
+  iframe {
+    width: 100% !important;
   }
 }
