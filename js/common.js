@@ -11,6 +11,7 @@ $(document).ready(function() {
 	//menu
 	$( ".trigger_menu" ).click(function() {
 	  $( ".menu > ul" ).slideToggle( "slow");
+	  $( ".fixed_sidebar" ).toggle( "fast");
 	});
 
 		$( ".touch .main, .touch .footer" ).click(function() {
