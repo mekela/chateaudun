@@ -170,7 +170,7 @@
 		padding-left: 10px;
 		li{
 			display: inline-block;
-			padding: 0 8px;
+			padding: 0 5px;
 			a{
 				display: block;
 				height: 80px;
@@ -795,8 +795,10 @@
 		 align-content: space-between;
 	}
 		.contexts_item{
-			width: 417px;
+			width: 415px;
+			vertical-align: top;
 			padding-bottom: 43px;
+
 			span{
 				display: block;
 				height: 100px;
@@ -811,6 +813,12 @@
 			p{
 				font-size: 16px;
 			}
+		}
+		.no-flexbox  .contexts_item, .no-flexbox .targets_item{
+			display: inline-block;
+			width: 48%;
+			box-sizing: border-box;
+			padding: 0 20px 40px 20px;
 		}
 
 /*-----------end-contexts-----------*/
