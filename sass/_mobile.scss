@@ -24,9 +24,7 @@
 			max-width: 100%;
 		}
 	}
-	.modal{
-		width: auto !important;
-	}
+	
 }
 
 //styles for ipad
@@ -229,6 +227,15 @@
 	.lang{
 		right: 0;
 	}
+
+	.modal{
+		width: auto !important;
+		min-height: 2500px ; 
+	}
+	.fancybox-inner{
+		min-height: 2500px;
+	}
+
 }
 
 //styles for small tablets
