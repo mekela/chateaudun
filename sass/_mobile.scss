@@ -1,5 +1,14 @@
-// Normally mainpage styles
+
 // You can read about usage in https://github.com/paranoida/sass-mediaqueries 
+
+//style for notebooks
+@include mq($media-type: 'all', $min-width: 1025px, $max-width: 1227px) {
+	.lang {
+	    position: absolute;
+	    right: 195px;
+	    top: 22px;
+	}
+}
 
 //styles for custom device width
 @include mq($max-width: 1100px) {
@@ -243,6 +252,15 @@
 	.associates_item, .colaborators_inner .associates_item{
 		display: inline-block;
 	}
+
+	.tags_wrap figure {
+    width: 50%;
+    display: inline-block;
+	}
+
+	.top_image_text h4{
+		padding: 5px;
+	}
 }
 
 //styles for iphone
@@ -254,7 +272,7 @@
 	}
 } 
 
-@include mq($max-width: 470px) {
+@include mq($max-width: 520px) {
 	.modal_form{
 		padding: 10px;
 		input[type=text], input[type=email], select{
