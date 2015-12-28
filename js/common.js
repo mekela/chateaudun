@@ -18,6 +18,11 @@ $(document).ready(function() {
 		  $( ".touch .menu > ul" ).hide();
 		});
 
+		$( ".drop_item" ).click(function() {
+		  $( this ).next('.drop_menu').slideToggle('fast');
+		});
+
+
 	//wow
 	new WOW().init();
 
