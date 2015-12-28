@@ -83,6 +83,13 @@
 	}
 }
 
+//menu fix
+@include mq($min-width: 768px) {
+	.menu>ul{
+		display: block !important;
+	}
+}
+
 //styles for mobile phones
 @include mq($max-width: 767px) {
 	.logo{
