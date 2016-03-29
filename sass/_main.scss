@@ -70,6 +70,7 @@
  	.container{
  		position: static;
  		overflow: visible;
+ 		width: 1200px;
  	}
  }
 	.logo{
@@ -371,6 +372,24 @@
 			margin: auto;
 			border: none;
 		}
+		ul{
+			text-align: left;
+			li{
+				padding: 0 0 18px 32px;
+				position: relative;
+				&:before{
+					content: '';
+					width: 8px;
+					height: 8px;
+					border-radius: 50%;
+					background:#ee6c16;	
+					position: absolute;
+					left: 0;
+					top: 4px;
+
+				}
+			}
+		}
 	}
 	.title{
 		padding: 9px 0 25px 0;
@@ -431,6 +450,11 @@
 			}
 			&:last-child{
 				float: right;
+			}
+			img{
+				margin: 0 auto;
+				display: block;
+				margin-bottom: 22px;
 			}
 		}
 
