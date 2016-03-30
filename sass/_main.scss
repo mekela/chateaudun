@@ -873,3 +873,68 @@
 .lang ul{
 	z-index: 10;
 }
+.situation_block{
+	text-align: center;
+	padding-bottom: 45px;
+	&:before{
+		content: '';
+		width: 700px;
+		height: 1px;
+		background:#413f42;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 40px;
+	}
+	h6{
+		padding: 0 0 20px 0;
+		font-size: 20px;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #231f20;
+		text-align: left;
+	}
+	strong{
+		display: block;
+		font-size: 14px;
+		font-weight: normal;
+		text-align: left;
+		padding-bottom: 18px;
+	}
+	figure{
+		text-align: center;
+		display: inline-block;
+		width: 210px;
+		vertical-align: top;
+		padding: 0 60px;
+	}
+	&.text-center{
+		h6, strong{
+			text-align: center;
+		}
+	}
+}
+.situation_table{
+	padding: 40px 0;
+	text-align: center;
+	td{
+		height: 135px;
+		vertical-align: top;
+	}
+	td, th{
+		border-left: 1px dashed #ef6b16;
+		&:first-child{
+			border: none;
+		}
+	}
+	th{
+		text-transform: uppercase;
+	}
+}
+
+.situation_targets{
+	text-align: center;
+	.targets_item{
+		float: none;
+		display: inline-block;
+	}
+}
