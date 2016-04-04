@@ -898,7 +898,7 @@
 		font-size: 14px;
 		font-weight: normal;
 		text-align: left;
-		padding-bottom: 18px;
+		padding-bottom: 38px;
 	}
 	figure{
 		text-align: center;
@@ -936,6 +936,9 @@
 	.targets_item{
 		float: none;
 		display: inline-block;
+		p{
+			text-transform: none;
+		}
 	}
 }
 
@@ -966,7 +969,7 @@
 	}
 }
 
-.center_txt{
+.center_txt.center_list{
 	ul {
 		li{
 			text-align: center;
@@ -993,5 +996,39 @@
 		font-size: 14px;
 		font-weight: 600;
 		font-family: $ffamily;
+	}
+}
+
+.bnr_text_wrap{
+	margin-left: -425px;
+	width: 850px;
+	h4{
+		font-size: 24px;
+		color: #132b52;
+	}
+	section{
+		line-height: 20px;
+		font-size: 14px;
+		font-weight: 600;
+		color: #231f20;
+		font-family: $ffamily;
+	}
+}
+
+.top_image_full_width{
+	width: 850px;
+	margin-left: -425px;
+	&:before{
+		left: 9px;
+		top: 21px;
+	}
+	&:after{
+		top: auto;
+	}
+}
+
+.situation_table{
+	table{
+		background:url(../img/graph.png) no-repeat center 30px;
 	}
 }
