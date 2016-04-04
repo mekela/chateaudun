@@ -965,3 +965,33 @@
 		}
 	}
 }
+
+.center_txt{
+	ul {
+		li{
+			text-align: center;
+			&:before{
+				position: relative;
+				top: -1px;
+				margin: 0 10px 0 0;
+				display: inline-block;
+			}
+		}
+	}
+}
+
+.contacts_txt{
+	strong{
+		font-size: 24px;
+		color: #f06b18;
+		text-transform: uppercase;
+		padding-bottom: 30px;
+		display: block;
+	}
+	p{
+		line-height: 20px;
+		font-size: 14px;
+		font-weight: 600;
+		font-family: $ffamily;
+	}
+}
