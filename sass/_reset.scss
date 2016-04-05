@@ -149,6 +149,7 @@ textarea{
 .wrapper{
 @include povh('');
 padding: 80px 0 0 0 ;
+background: url("../img/icons/bg.png") left top repeat;
 }
 
 .container{

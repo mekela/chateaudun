@@ -30,6 +30,19 @@ $(document).ready(function() {
 	$( ".lang strong" ).click(function() {
 	  $( ".lang > ul" ).slideToggle( "slow");
 	});
+
+	//sidebar
+	function posSidebar()
+	{
+	  var offsetRight = $('.wrapper').offset().left;
+	$('.fixed_sidebar').css({right: offsetRight})
+		
+	}
+	posSidebar()
+		$(window).resize(function()
+		{
+		  posSidebar();
+		})
 });
 
 

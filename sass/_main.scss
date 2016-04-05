@@ -25,6 +25,7 @@
 			b{
 				background:$second_color;
 				left: -90px;
+				opacity: 1;
 			}
 		}
 		span{
@@ -39,7 +40,8 @@
 		}
 		b{
 			position: absolute;
-		    left: 0px;
+		    left: -30px;
+		    opacity: 0;
 		    top: 0;
 		    font: 21px/60px "Cabin", sans-serif;
 		    text-transform: uppercase;
@@ -59,9 +61,6 @@
  /*------header------*/
  .header{
 	height: 80px;
-	background:#f3f3f3;
-	border-bottom: 5px solid $third_color;
-	box-shadow: 0 2px 10px lightgrey;
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -71,18 +70,22 @@
  		position: static;
  		overflow: visible;
  		width: 1200px;
+ 		background:#f3f3f3;
+		border-bottom: 5px solid $third_color;
+		box-shadow: 0 2px 10px lightgrey;
+		height: 80px;
  	}
  }
 	.logo{
 		float: right;
-		padding: 8px 0 0 0;
+		padding: 8px 70px 0 0;
 		position: relative;
 	}
 	
 	/*------lang------*/
 	.lang{
 		position: absolute;
-		right: -87px;
+		right: 0px;
   		top: 22px;
   		strong{
   			width: 70px;
