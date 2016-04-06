@@ -41,6 +41,19 @@
 			max-width: 100%;
 		}
 	}
+	.foot_menu{
+		text-align: center;
+		ul{
+			padding-top: 26px;
+			display: inline-block;
+			&:last-child{
+				float: none;
+			}
+		}
+	}	
+	.center_txt ul, .centered_block{
+		width: auto;
+	}
 	
 }
 

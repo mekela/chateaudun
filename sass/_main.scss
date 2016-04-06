@@ -539,9 +539,13 @@
 		height: 65px;
 		background-color: #ef6b17;
 		box-shadow: 5px 0 8px rgba(0,0,0,.37);
-		text-align: center;
+		text-align: left;
 		ul{
 			padding-top: 26px;
+			display: inline-block;
+			&:last-child{
+				float: right;
+			}
 		}
 		li{
 			display: inline-block;
@@ -1033,5 +1037,21 @@
 .situation_table{
 	table{
 		background:url(../img/graph.png) no-repeat center 30px;
+	}
+}
+
+
+.center_txt ul{
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.centered_block{
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	.container{
+		width: auto;
 	}
 }
